@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet">
+  <script defer src="./main.js"></script>
+  <title>Document</title>
+
+  <style>
+    #start_back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 700px;
+      background-color: #000;
+    }
+    #start {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 24px;
+      border: 1px solid #fff;
+      padding: 20px 30px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .container {
+      position: absolute;
+      left: 450px;
+      top: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .container .control h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .container .control span {
+      margin-right: 20px;
+      text-align: center;
+    }
+    .container .control p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .container a {
+      display: block;
+      width: 100px;
+      background-color: #000;
+    }
+    .container a img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="start_back">
+    <div id="start">START</div>
+  </div>
+
+  <div class="container">
+    <a href=""><img src="./img/github.png" alt="github"></a>
+    <div class="control">
+      <h2>조작 방법</h2>
+      <span>← : 왼쪽 이동</span>
+      <span>→ : 오른쪽 이동</span>
+      <p>space bar : 공격</p>
+    </div>
+    <ul class="scroe">
+
+    </ul>
+  </div>
+
+</body>
+
+</html>
